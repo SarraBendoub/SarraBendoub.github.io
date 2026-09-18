@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sarra Ben Doub — CV</title>
+<link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+<header class="head">
+  <h1>SARRA BEN DOUB</h1>
+  <p class="role">Data Scientist &amp; AI Engineer · Financial Data · Risk · AI</p>
+  <p class="contact">
+    <span>+216 26 236 449</span><span class="sep">·</span><span><a href="mailto:sarrabendoub5@gmail.com">sarrabendoub5@gmail.com</a></span><span class="sep">·</span><span>Tunis, Tunisia</span><span class="sep">·</span><span><a href="https://www.linkedin.com/in/sarra-ben-doub/">linkedin.com/in/sarra-ben-doub</a></span><span class="sep">·</span><span><a href="https://github.com/SarraBendoub">github.com/SarraBendoub</a></span><span class="sep">·</span><span><a href="https://sarrabendoub.github.io/">sarrabendoub.github.io</a></span>
+  </p>
+</header>
+
+<section class="sec">
+  <h2>Profile</h2>
+  <p class="profil">
+    Engineering graduate from ENSIT in applied mathematics and modelling, with experience in Data
+    Science and AI Engineering across financial and insurance environments. I build Machine Learning,
+    Generative AI and intelligent document processing solutions for financial data, risk and analysis
+    problems. I am looking for an opportunity in Data Science, AI Engineering or Machine Learning in
+    banking, insurance, leasing or fintech in Tunisia.
+  </p>
+</section>
+
+<section class="sec">
+  <h2>Professional experience</h2>
+
+  <article class="item">
+    <div class="row">
+      <h3>BIAT — Financial Document Intelligence &amp; Credit Risk</h3>
+      <span class="date">Feb – Jul 2026</span>
+    </div>
+    <p class="org">Banque Internationale Arabe de Tunisie · AI Engineer &amp; Data Scientist — Final-year project</p>
+    <ul>
+      <li><strong>Document validation &amp; extraction.</strong> Checking the nature of the document, then extracting financial tables from the statements filed as PDFs with the CMF using Docling and OCR (balance sheet, income statement, cash-flow statement), structured and stored in MongoDB.</li>
+      <li><strong>Data cleaning &amp; verification.</strong> Cleaning, normalising and checking the extracted data (OCR errors, inconsistent values), then assigning it to the chart of accounts.</li>
+      <li><strong>Financial &amp; credit analysis.</strong> Streamlit decision-support application computing liquidity, solvency, profitability and leverage ratios, with year-on-year comparison.</li>
+      <li><strong>LLM-generated summary</strong> with levels of assessment (favourable, reserved, unfavourable, needs further review), the final decision remaining with the analyst. Pipeline orchestrated with n8n, containerised with Docker.</li>
+    </ul>
+    <p class="tech"><b>Tech:</b> Python · Docling / OCR · MongoDB · Streamlit · LLM · n8n · Docker</p>
+  </article>
+
+  <article class="item">
+    <div class="row">
+      <h3>GAT Assurances — Claims Intelligence &amp; NLP</h3>
+      <span class="date">Jun – Aug 2025</span>
+    </div>
+    <p class="org">Insurance · AI &amp; Full-Stack Development · Internship</p>
+    <ul>
+      <li><strong>Claims-management platform</strong>: public website, customer area and back-office, designed with a graphic designer for the visual identity and user experience.</li>
+      <li><strong>Intent classification</strong> through a French-language rule engine (missing accents, typos), backed by zero-shot classification with BART-large-MNLI when no rule decides.</li>
+      <li><strong>Conversational assistant</strong> collecting the missing information and creating the claim (category, priority, tracking number) routed to the back-office.</li>
+    </ul>
+    <p class="tech"><b>Tech:</b> Python · Flask · Transformers · BART-large-MNLI · NLP · SQLite · HTML/CSS/JS &nbsp;|&nbsp; <a href="https://github.com/SarraBendoub/insurance-agency-platform">github.com/SarraBendoub/insurance-agency-platform</a></p>
+  </article>
+
+  <article class="item">
+    <div class="row">
+      <h3>VALUE — Data Engineering &amp; Analytics</h3>
+      <span class="date">Jul 2024</span>
+    </div>
+    <p class="org">Data Science · Data Engineering · Internship</p>
+    <ul>
+      <li><strong>Multi-source collection</strong> automated with Scrapy and Selenium, then cleaning, structuring and merging the data into a usable dataset.</li>
+      <li><strong>K-Means segmentation</strong> and interactive Folium mapping to visualise how sites are distributed and spot areas with low digital visibility.</li>
+    </ul>
+    <p class="tech"><b>Tech:</b> Python · Scrapy · Selenium · Pandas · scikit-learn · K-Means · Folium &nbsp;|&nbsp; <a href="https://github.com/SarraBendoub/HeritageScope">github.com/SarraBendoub/HeritageScope</a></p>
+  </article>
+
+  <article class="item">
+    <div class="row">
+      <h3>BNA Bank — Customer Service Chatbot</h3>
+      <span class="date">Apr – May 2023</span>
+    </div>
+    <p class="org">Banking · NLP &amp; Machine Learning · Internship</p>
+    <ul>
+      <li><strong>Intent classification</strong> on French-language queries: linguistic preprocessing, training and comparison of two architectures, FNN and LSTM.</li>
+      <li><strong>Automated answers</strong> from the bank's FAQ base (banking services, BNA eBanking, Mandat Cash), deployed with Flask.</li>
+    </ul>
+    <p class="tech"><b>Tech:</b> TensorFlow · Keras · NLTK · Python · Flask</p>
+  </article>
+</section>
+
+<section class="sec">
+  <h2>Personal projects — Financial AI &amp; Risk</h2>
+
+  <article class="item">
+    <div class="row">
+      <h3>CreditGuard — Explainable &amp; Monitored Credit Scoring</h3>
+      <span class="date">2026</span>
+    </div>
+    <p class="org">Credit risk · Probability of default</p>
+    <ul>
+      <li><strong>LightGBM</strong> probability-of-default model, <strong>AUC 0.757</strong>, with <strong>SHAP</strong> explainability per prediction.</li>
+      <li>Drift monitoring with <strong>PSI</strong>, Kolmogorov-Smirnov and Chi-squared tests to detect distribution shifts. Streamlit dashboard, Docker packaging.</li>
+    </ul>
+    <p class="tech"><b>Tech:</b> Python · LightGBM · SHAP · SciPy · Streamlit · Docker &nbsp;|&nbsp; <a href="https://github.com/SarraBendoub/CreditGuard">github.com/SarraBendoub/CreditGuard</a></p>
+  </article>
+
+  <article class="item">
+    <div class="row">
+      <h3>FraudGuard — Fraud Detection &amp; AML/CFT Monitoring</h3>
+      <span class="date">2026</span>
+    </div>
+    <p class="org">Fraud · Financial Crime · Transaction Monitoring</p>
+    <ul>
+      <li><strong>XGBoost</strong> fraud detection on <strong>6.4M transactions at 0.13% fraud</strong>: <strong>PR-AUC 0.89</strong>, <strong>F1 0.82</strong>, threshold tuned on the trade-off between missed frauds and false alerts.</li>
+      <li>Transaction-monitoring rule engine (velocity, structuring, account patterns), <strong>BLOCK / REVIEW / ALLOW</strong> action levels, SHAP explainability on alerts.</li>
+      <li><strong>Data leakage detected and fixed</strong>: an early version reached PR-AUC 0.9998 using features posterior to the transaction, since removed.</li>
+    </ul>
+    <p class="tech"><b>Tech:</b> Python · XGBoost · SHAP · pandas · Streamlit &nbsp;|&nbsp; <a href="https://github.com/SarraBendoub/FraudGuard">github.com/SarraBendoub/FraudGuard</a></p>
+  </article>
+</section>
+
+<section class="sec">
+  <h2>Technical skills</h2>
+  <dl class="pairs">
+    <dt>Financial Data &amp; Risk</dt><dd>Credit Risk · Probability of Default · Financial Statements · Fraud Detection · Model Monitoring · Explainable&nbsp;AI</dd>
+    <dt>Machine Learning</dt><dd>Python · Scikit-learn · XGBoost · LightGBM · SHAP · PyTorch · TensorFlow · Statistics</dd>
+    <dt>Data</dt><dd>SQL · PostgreSQL · MongoDB · Pandas · NumPy · Web scraping (Scrapy, Selenium, BeautifulSoup)</dd>
+    <dt>Document AI</dt><dd>OCR · Docling · Document Processing · LLM</dd>
+    <dt>Generative AI</dt><dd>RAG · Transformers · LLM · Ollama · Groq</dd>
+    <dt>Deployment</dt><dd>Docker · FastAPI · Streamlit · n8n · Git</dd>
+    <dt>Reporting &amp; Data Viz</dt><dd>Power BI · Matplotlib · Seaborn · Streamlit dashboards</dd>
+  </dl>
+</section>
+
+<div class="two-col">
+  <section class="sec">
+    <h2>Education</h2>
+    <div class="edu-line"><span><b>Engineering degree</b> — Applied Mathematics &amp; Modelling, ENSIT</span><span class="date">2023 – 2026</span></div>
+    <div class="edu-line"><span><b>BSc</b> — Data Science, FST</span><span class="date">2020 – 2023</span></div>
+    <div class="edu-line"><span><b>Baccalaureate</b> — Experimental Sciences</span><span class="date">2020</span></div>
+  </section>
+
+  <section class="sec">
+    <h2>Certification &amp; languages</h2>
+    <div class="edu-line"><span><b>Microsoft Azure AI Fundamentals (AI-900)</b></span></div>
+    <div class="edu-line"><span>Arabic native · French fluent · English intermediate (TOEIC) · Italian A1</span></div>
+  </section>
+</div>
+
+</body>
+</html>

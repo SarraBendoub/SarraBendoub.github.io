@@ -1,0 +1,139 @@
+/* ============================================================
+   CV — Sarra Ben Doub
+   Source modifiable des PDF. Palette alignee sur le portfolio.
+   Rendu : voir cv/build-cv.py (Chrome headless --print-to-pdf)
+   ============================================================ */
+
+:root {
+  --navy: #12263f;
+  --accent: #b06a1f;
+  --ink: #1c1917;
+  --body: #3c352d;
+  --muted: #6f6558;
+  --line: #ded3c2;
+
+  --fs: 8.0pt;      /* corps */
+  --fs-sm: 7.4pt;   /* tech, meta */
+  --lh: 1.23;
+}
+
+@page {
+  size: A4;
+  margin: 8mm 12mm 7mm;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--fs);
+  line-height: var(--lh);
+  color: var(--body);
+}
+
+/* ---------------- EN-TETE ---------------- */
+.head { border-bottom: 1.6pt solid var(--navy); padding-bottom: 4pt; margin-bottom: 6pt; }
+
+.head h1 {
+  font-size: 17pt;
+  font-weight: 700;
+  letter-spacing: .6pt;
+  color: var(--navy);
+  line-height: 1.1;
+}
+
+.head .role {
+  font-size: 9.8pt;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 1.5pt;
+}
+
+.head .contact {
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  margin-top: 3.5pt;
+}
+
+.head .contact span { white-space: nowrap; }
+.head .contact .sep { color: var(--line); padding: 0 2.2pt; }
+
+/* ---------------- SECTIONS ---------------- */
+.sec { margin-top: 5pt; }
+
+.sec > h2 {
+  font-size: 8.6pt;
+  font-weight: 700;
+  letter-spacing: 1.1pt;
+  text-transform: uppercase;
+  color: var(--navy);
+  border-bottom: .6pt solid var(--line);
+  padding-bottom: 1.6pt;
+  margin-bottom: 4pt;
+}
+
+.profil { text-align: justify; }
+
+/* ---------------- ENTREES ---------------- */
+.item { margin-bottom: 4pt; }
+.item:last-child { margin-bottom: 0; }
+
+.item .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8pt;
+}
+
+.item h3 {
+  font-size: var(--fs);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.item .date {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.item .org {
+  font-size: var(--fs-sm);
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1.5pt;
+}
+
+.item ul { list-style: disc; padding-left: 11pt; }
+
+/* Puces natives : un ::before en position absolue sort les puces du flux du PDF
+   et les ATS lisent alors toutes les puces apres la section Langues. */
+.item li { margin-bottom: .3pt; }
+.item li::marker { color: var(--accent); }
+
+.item .tech {
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  margin-top: 1.5pt;
+}
+
+.item .tech b { color: var(--ink); font-weight: 600; }
+
+/* ---------------- GRILLE LIBELLE / VALEUR ---------------- */
+.pairs { display: grid; grid-template-columns: 122pt 1fr; row-gap: 2.2pt; column-gap: 8pt; }
+.pairs dt { font-weight: 700; color: var(--ink); }
+.pairs dd { color: var(--body); }
+
+/* ---------------- BAS DE PAGE : 2 COLONNES ---------------- */
+.two-col { display: grid; grid-template-columns: 1.45fr 1fr; gap: 6pt 18pt; font-size: var(--fs-sm); }
+
+.edu-line { display: flex; justify-content: space-between; gap: 8pt; margin-bottom: 1.2pt; }
+.edu-line b { font-weight: 600; color: var(--ink); }
+.edu-line .date { font-size: var(--fs-sm); color: var(--muted); white-space: nowrap; }
+
+strong { font-weight: 600; color: var(--ink); }
+
+a { color: inherit; text-decoration: none; }

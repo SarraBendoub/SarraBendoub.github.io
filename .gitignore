@@ -1,0 +1,5 @@
+.claude/
+__pycache__/
+*.bak.html
+Thumbs.db
+desktop.ini
