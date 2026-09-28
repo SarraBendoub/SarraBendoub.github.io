@@ -9,7 +9,7 @@
 
 <header class="head">
   <h1>SARRA BEN DOUB</h1>
-  <p class="role">Data Scientist &amp; AI Engineer · LLMs · RAG · Document AI · Machine Learning</p>
+  <p class="role">Data Scientist &amp; AI Engineer · Financial Data · Risk · AI</p>
   <p class="contact">
     <span>+216 26 236 449</span><span class="sep">·</span><span><a href="mailto:sarrabendoub5@gmail.com">sarrabendoub5@gmail.com</a></span><span class="sep">·</span><span>Tunis, Tunisia</span><span class="sep">·</span><span><a href="https://www.linkedin.com/in/sarra-ben-doub/">linkedin.com/in/sarra-ben-doub</a></span><span class="sep">·</span><span><a href="https://github.com/SarraBendoub">github.com/SarraBendoub</a></span><span class="sep">·</span><span><a href="https://sarrabendoub.github.io/">sarrabendoub.github.io</a></span>
   </p>
@@ -18,12 +18,11 @@
 <section class="sec">
   <h2>Profile</h2>
   <p class="profil">
-    Engineering graduate from ENSIT in applied mathematics and modelling, with experience in Data
+    Engineering graduate from the National School of Engineers of Tunis (ENSIT) in applied
+    mathematics and modelling, with experience in Data
     Science and AI Engineering across financial and insurance environments. I build Machine Learning,
     Generative AI and intelligent document processing solutions for financial data, risk and analysis
-    problems. I am looking for an opportunity in Data Science, AI Engineering or Machine Learning in
-    the financial sector in Tunisia: banking, insurance, leasing and fintech, or with the consulting
-    firms and software vendors that serve them.
+    problems. I am looking for an opportunity in Data Science, AI Engineering or Machine Learning.
   </p>
 </section>
 
@@ -39,8 +38,7 @@
     <ul>
       <li><strong>Document validation &amp; extraction.</strong> Checking the nature of the document, then extracting financial tables from the statements filed as PDFs with the CMF using Docling and OCR (balance sheet, income statement, cash-flow statement), structured and stored in MongoDB.</li>
       <li><strong>Data cleaning &amp; verification.</strong> Cleaning, normalising and checking the extracted data (OCR errors, inconsistent values), then assigning it to the chart of accounts.</li>
-      <li><strong>Financial &amp; credit analysis.</strong> Streamlit decision-support application computing liquidity, solvency, profitability and leverage ratios, with year-on-year comparison.</li>
-      <li><strong>LLM-generated summary</strong> with levels of assessment (favourable, reserved, unfavourable, needs further review), the final decision remaining with the analyst. Pipeline orchestrated with n8n, containerised with Docker.</li>
+      <li><strong>Analysis and LLM-generated summary.</strong> Streamlit application (liquidity, solvency, profitability and leverage ratios) then a written summary with levels of assessment, the decision remaining with the analyst. Pipeline orchestrated with n8n, containerised with Docker.</li>
     </ul>
     <p class="tech"><b>Tech:</b> Python · Docling / OCR · MongoDB · Streamlit · LLM · n8n · Docker</p>
   </article>
@@ -54,7 +52,6 @@
     <ul>
       <li><strong>Claims-management platform</strong>: public website, customer area and back-office, designed with a graphic designer for the visual identity and user experience.</li>
       <li><strong>Intent classification</strong> through a French-language rule engine (missing accents, typos), backed by zero-shot classification with BART-large-MNLI when no rule decides.</li>
-      <li><strong>Conversational assistant</strong> collecting the missing information and creating the claim (category, priority, tracking number) routed to the back-office.</li>
     </ul>
     <p class="tech"><b>Tech:</b> Python · Flask · Transformers · BART-large-MNLI · NLP · SQLite · HTML/CSS/JS &nbsp;|&nbsp; <a href="https://github.com/SarraBendoub/insurance-agency-platform">github.com/SarraBendoub/insurance-agency-platform</a></p>
   </article>
@@ -66,8 +63,7 @@
     </div>
     <p class="org">Data Science · Data Engineering · Internship</p>
     <ul>
-      <li><strong>Multi-source collection</strong> automated with Scrapy and Selenium, then cleaning, structuring and merging the data into a usable dataset.</li>
-      <li><strong>K-Means segmentation</strong> and interactive Folium mapping to visualise how sites are distributed and spot areas with low digital visibility.</li>
+      <li><strong>Multi-source collection</strong> automated with Scrapy and Selenium, cleaning and merging, then <strong>K-Means segmentation</strong> of 314 sites and Folium mapping.</li>
     </ul>
     <p class="tech"><b>Tech:</b> Python · Scrapy · Selenium · Pandas · scikit-learn · K-Means · Folium &nbsp;|&nbsp; <a href="https://github.com/SarraBendoub/HeritageScope">github.com/SarraBendoub/HeritageScope</a></p>
   </article>
@@ -79,8 +75,7 @@
     </div>
     <p class="org">Banking · NLP &amp; Machine Learning · Internship</p>
     <ul>
-      <li><strong>Intent classification</strong> on French-language queries: linguistic preprocessing, training and comparison of two architectures, FNN and LSTM.</li>
-      <li><strong>Automated answers</strong> from the bank's FAQ base (banking services, BNA eBanking, Mandat Cash), deployed with Flask.</li>
+      <li><strong>Intent classification</strong> on French-language queries: NLTK preprocessing, training and comparison of two architectures, FNN and LSTM, deployed with Flask.</li>
     </ul>
     <p class="tech"><b>Tech:</b> TensorFlow · Keras · NLTK · Python · Flask &nbsp;|&nbsp; <a href="https://github.com/SarraBendoub/-chatbot_BNA-main">github.com/SarraBendoub/-chatbot_BNA-main</a></p>
   </article>
@@ -91,13 +86,25 @@
 
   <article class="item">
     <div class="row">
+      <h3>CreditDoc-AI — Extraction from scanned documents &amp; grounded Q&amp;A</h3>
+      <span class="date">2026</span>
+    </div>
+    <p class="org">Document AI · OCR · LLM · RAG</p>
+    <ul>
+      <li>Image preprocessing, OCR and table reconstruction on a scanned financial statement, then extraction to <strong>JSON validated with Pydantic</strong>: label rules first, a local LLM for the missing fields, provenance kept.</li>
+      <li><strong>Grounded RAG</strong> over the document: answers written only from the retrieved passages, page citation, explicit refusal when the information is absent.</li>
+    </ul>
+    <p class="tech"><b>Tech:</b> Python · OpenCV · OCR · Ollama · Pydantic · Streamlit</p>
+  </article>
+
+  <article class="item">
+    <div class="row">
       <h3>CreditGuard — Explainable &amp; Monitored Credit Scoring</h3>
       <span class="date">2026</span>
     </div>
     <p class="org">Credit risk · Probability of default</p>
     <ul>
-      <li><strong>LightGBM</strong> probability-of-default model, <strong>AUC 0.757</strong>, with <strong>SHAP</strong> explainability per prediction.</li>
-      <li>Drift monitoring with <strong>PSI</strong>, Kolmogorov-Smirnov and Chi-squared tests to detect distribution shifts. Streamlit dashboard, Docker packaging.</li>
+      <li><strong>LightGBM</strong> probability-of-default model, <strong>AUC 0.757</strong>, <strong>SHAP</strong> explainability per prediction and drift monitoring (PSI, Kolmogorov-Smirnov, Chi-squared). Streamlit dashboard, Docker packaging.</li>
     </ul>
     <p class="tech"><b>Tech:</b> Python · LightGBM · SHAP · SciPy · Streamlit · Docker &nbsp;|&nbsp; <a href="https://github.com/SarraBendoub/CreditGuard">github.com/SarraBendoub/CreditGuard</a></p>
   </article>
@@ -110,8 +117,7 @@
     <p class="org">Fraud · Financial Crime · Transaction Monitoring</p>
     <ul>
       <li><strong>XGBoost</strong> fraud detection on <strong>6.4M transactions at 0.13% fraud</strong>: <strong>PR-AUC 0.89</strong>, <strong>F1 0.82</strong>, threshold tuned on the trade-off between missed frauds and false alerts.</li>
-      <li>Transaction-monitoring rule engine (velocity, structuring, account patterns), <strong>BLOCK / REVIEW / ALLOW</strong> action levels, SHAP explainability on alerts.</li>
-      <li><strong>Data leakage detected and fixed</strong>: an early version reached PR-AUC 0.9998 using features posterior to the transaction, since removed.</li>
+      <li>Transaction-monitoring rule engine (velocity, structuring), <strong>BLOCK / REVIEW / ALLOW</strong> action levels, SHAP explainability on alerts, and a <strong>data leakage found and fixed</strong> (PR-AUC 0.9998 obtained from features posterior to the transaction).</li>
     </ul>
     <p class="tech"><b>Tech:</b> Python · XGBoost · SHAP · pandas · Streamlit &nbsp;|&nbsp; <a href="https://github.com/SarraBendoub/FraudGuard">github.com/SarraBendoub/FraudGuard</a></p>
   </article>
@@ -133,8 +139,8 @@
 <div class="two-col">
   <section class="sec">
     <h2>Education</h2>
-    <div class="edu-line"><span><b>Engineering degree</b> — Applied Mathematics &amp; Modelling, ENSIT</span><span class="date">2023 – 2026</span></div>
-    <div class="edu-line"><span><b>BSc</b> — Data Science, FST</span><span class="date">2020 – 2023</span></div>
+    <div class="edu-line"><span><b>Engineering degree</b> — Applied Mathematics &amp; Modelling, National School of Engineers of Tunis</span><span class="date">2023 – 2026</span></div>
+    <div class="edu-line"><span><b>BSc</b> — Data Science, Faculty of Sciences of Tunis</span><span class="date">2020 – 2023</span></div>
     <div class="edu-line"><span><b>Baccalaureate</b> — Experimental Sciences</span><span class="date">2020</span></div>
   </section>
 

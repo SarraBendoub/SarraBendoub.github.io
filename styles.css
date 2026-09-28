@@ -1,20 +1,22 @@
 /* ============================================================
    Sarra Ben Doub — Portfolio banque / assurance
-   Palette : navy #12263f · bleu #b06a1f · ambre #b45309
+   Palette tiree de la photo de profil, rechauffee au beige :
+   ardoise #22383d · vert-de-gris #3c6f68 · vert clair #e6d3ab
+   · creme #fdfaf3 · beige #f2ead9
    ============================================================ */
 
 :root {
-  --navy: #12263f;
-  --navy-2: #1c3a5e;
-  --blue: #b06a1f;
-  --blue-soft: #f2e5d0;
-  --amber: #b45309;
-  --ink: #1c1917;
-  --body: #443c33;
-  --muted: #7c7166;
-  --line: #e6dbc9;
-  --bg: #fffdf8;
-  --bg-alt: #f5eee1;
+  --navy: #22383d;
+  --navy-2: #3a5f60;
+  --blue: #3c6f68;
+  --blue-soft: #f3ecdd;
+  --amber: #3c6f68;
+  --ink: #18211f;
+  --body: #3b4744;
+  --muted: #66756f;
+  --line: #e2d9c6;
+  --bg: #fdfaf3;
+  --bg-alt: #f2ead9;
   --radius: 10px;
   --wrap: 1080px;
 }
@@ -47,7 +49,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
   gap: 16px;
   padding: 12px 24px;
-  background: rgba(18, 38, 63, .96);
+  background: rgba(34, 56, 61, .96);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
@@ -67,7 +69,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nav-links a {
-  color: #ddd2c2;
+  color: #ddd0b6;
   font-size: 14px;
   transition: color .18s;
 }
@@ -75,10 +77,11 @@ a { color: inherit; text-decoration: none; }
 
 .nav-cta {
   padding: 7px 16px;
-  border: 1px solid rgba(255, 255, 255, .3);
+  border: 1px solid rgba(230, 211, 171, .55);
   border-radius: 999px;
+  color: #e6d3ab;
 }
-.nav-cta:hover { background: rgba(255, 255, 255, .1); }
+.nav-cta:hover { background: #e6d3ab; color: #22383d; border-color: #e6d3ab; }
 
 .nav-toggle {
   display: none;
@@ -98,7 +101,7 @@ a { color: inherit; text-decoration: none; }
 /* ---------------- HERO ---------------- */
 .hero {
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%);
-  color: #f3ece1;
+  color: #e9f0e8;
   padding: 76px 24px 84px;
 }
 
@@ -112,7 +115,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero-kicker {
-  color: #d9c4a3;
+  color: #b3c9ba;
   font-size: 13.5px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -133,14 +136,14 @@ a { color: inherit; text-decoration: none; }
   display: block;
   font-size: 21px;
   font-weight: 600;
-  color: #e8b877;
+  color: #e6d3ab;
   letter-spacing: .3px;
   margin-top: 10px;
 }
 
 .hero-lead {
   font-size: 17px;
-  color: #e2d8c9;
+  color: #dfe8dd;
   max-width: 620px;
   margin-bottom: 28px;
 }
@@ -156,8 +159,8 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid transparent;
 }
 .btn-primary { background: var(--blue); color: #fff; }
-.btn-primary:hover { background: #8f5316; transform: translateY(-1px); }
-.btn-ghost { border-color: rgba(255, 255, 255, .26); color: #ede4d6; }
+.btn-primary:hover { background: #2f6159; transform: translateY(-1px); }
+.btn-ghost { border-color: rgba(255, 255, 255, .26); color: #e7ede2; }
 .btn-ghost:hover { background: rgba(255, 255, 255, .1); color: #fff; }
 
 .hero-stats {
@@ -177,7 +180,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero-stats span {
   font-size: 13px;
-  color: #c0b2a0;
+  color: #9aa89f;
 }
 
 .hero-photo { position: relative; }
@@ -194,14 +197,19 @@ a { color: inherit; text-decoration: none; }
   bottom: -13px;
   transform: translateX(-50%);
   white-space: nowrap;
-  background: #16a34a;
-  color: #fff;
+  background: #e6d3ab;
+  color: #22383d;
   font-size: 12px;
   font-weight: 600;
   padding: 5px 14px;
   border-radius: 999px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
 }
+
+/* ---------------- LIENS RAPIDES DU HERO ---------------- */
+.hero-links { margin-top: 18px; font-size: 15px; color: rgba(255, 255, 255, .55); }
+.hero-links a { color: rgba(255, 255, 255, .85); text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, .28); padding-bottom: 1px; }
+.hero-links a:hover { color: #fff; border-bottom-color: #fff; }
 
 /* ---------------- SECTIONS ---------------- */
 .section { padding: 74px 0; }
@@ -299,7 +307,7 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
 .metric strong {
   display: block;
   font-size: 21px;
-  color: #8a4f14;
+  color: #2b5b55;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -412,14 +420,14 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
 /* ---------------- CONTACT ---------------- */
 .contact {
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%);
-  color: #f3ece1;
+  color: #e9f0e8;
   padding: 72px 24px;
 }
 .contact-inner { text-align: center; }
 .contact h2 { color: #fff; }
-.contact-lead { color: #e2d8c9; max-width: 560px; margin: 0 auto 32px; }
+.contact-lead { color: #dfe8dd; max-width: 560px; margin: 0 auto 32px; }
 .contact-avail {
-  color: #e8b877;
+  color: #e6d3ab;
   font-size: 16.5px;
   font-weight: 600;
   margin: 0 0 30px;
@@ -447,7 +455,7 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  color: #d9c4a3;
+  color: #b3c9ba;
   font-weight: 600;
   margin-bottom: 5px;
 }
@@ -455,8 +463,8 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
 .contact-loc { color: #bdae9c; font-size: 14px; }
 
 .footer {
-  background: #0c1b2e;
-  color: #a4907a;
+  background: #1b2e32;
+  color: #c9bda4;
   padding: 22px 24px;
   font-size: 13.5px;
   text-align: center;
@@ -549,7 +557,7 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
   width: 100%;
   height: auto;
   display: block;
-  background: #101d33;
+  background: #1a2b2f;
 }
 
 .demo figcaption {
@@ -740,7 +748,7 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
 .domain-tag {
   align-self: flex-start;
   background: var(--blue-soft);
-  color: #8a4f14;
+  color: #2b5b55;
   font-size: 11.5px;
   font-weight: 700;
   letter-spacing: .9px;
@@ -764,19 +772,19 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
   font-weight: 600;
   transition: color .18s;
 }
-.domain-link:hover { color: #8f5316; }
+.domain-link:hover { color: #2f6159; }
 
 /* bandeau gouvernance */
 .governance {
   margin-top: 22px;
   background: var(--navy);
-  color: #e8dfd2;
+  color: #e2e8db;
   border-radius: var(--radius);
   padding: 26px 30px;
 }
 .governance h4 { color: #fff; font-size: 16.5px; margin-bottom: 9px; }
 .governance p { font-size: 15.3px; }
-.governance strong { color: #e8b877; }
+.governance strong { color: #e6d3ab; }
 
 @media (max-width: 900px) { .domains { grid-template-columns: 1fr; } }
 @media (max-width: 640px) { .governance { padding: 22px 20px; } }
@@ -785,8 +793,8 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
 .hero { padding: 66px 24px 70px; }
 
 /* le bouton principal en beige clair : contraste fort sur le navy */
-.btn-primary { background: #f2e5d0; color: #12263f; }
-.btn-primary:hover { background: #fff; color: #12263f; }
+.btn-primary { background: #dfe8dd; color: #22383d; }
+.btn-primary:hover { background: #fff; color: #22383d; }
 
 @media (max-width: 640px) {
   .hero-pitch { font-size: 16px; }
@@ -804,15 +812,15 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
 .hero-tags {
   font-size: 15.5px;
   font-weight: 600;
-  color: #e8b877;
+  color: #e6d3ab;
   letter-spacing: .2px;
   margin-bottom: 18px;
 }
-.hero-tags span { color: rgba(232, 184, 119, .45); margin: 0 4px; }
+.hero-tags span { color: rgba(230, 211, 171, .45); margin: 0 4px; }
 
 .hero-pitch {
   font-size: 16.5px;
-  color: #e2d8c9;
+  color: #dfe8dd;
   max-width: 640px;
   margin-bottom: 20px;
 }
@@ -821,14 +829,14 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
   position: relative;
   max-width: 640px;
   font-size: 15.4px;
-  color: #f3ece1;
+  color: #e9f0e8;
   background: rgba(255, 255, 255, .07);
-  border: 1px solid rgba(232, 184, 119, .28);
+  border: 1px solid rgba(230, 211, 171, .28);
   border-radius: 9px;
   padding: 15px 18px 15px 40px;
   margin-bottom: 0;
 }
-.hero-seeking strong { color: #e8b877; font-weight: 600; }
+.hero-seeking strong { color: #e6d3ab; font-weight: 600; }
 .hero-seeking .dot {
   position: absolute;
   left: 18px; top: 22px;
@@ -844,7 +852,7 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
   position: relative;
   border: 1px solid var(--line);
   border-left: 5px solid var(--blue);
-  box-shadow: 0 3px 18px rgba(18, 38, 63, .09);
+  box-shadow: 0 3px 18px rgba(34, 56, 61, .09);
   padding: 34px 32px 28px;
   margin-top: 26px;
 }
@@ -902,7 +910,7 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
   font-weight: 600;
   color: var(--blue);
 }
-.stack-more:hover { color: #8f5316; }
+.stack-more:hover { color: #2f6159; }
 
 /* les trois piliers */
 .pillars { margin-top: 34px; }
@@ -918,7 +926,7 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
-  background: #101d33;
+  background: #1a2b2f;
   line-height: 0;
 }
 
@@ -940,7 +948,7 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
   gap: 9px;
   padding: 11px 20px;
   border-radius: 999px;
-  background: rgba(18, 38, 63, .88);
+  background: rgba(34, 56, 61, .88);
   border: 1px solid rgba(255, 255, 255, .3);
   color: #fff;
   font-size: 13.5px;
@@ -969,15 +977,15 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
 
 /* ---------------- BASCULE DE LANGUE ---------------- */
 .nav-lang {
-  border: 1px solid rgba(255, 255, 255, .26);
+  border: 1px solid rgba(230, 211, 171, .5);
   border-radius: 999px;
   padding: 5px 13px !important;
   font-size: 12.5px;
   font-weight: 700;
   letter-spacing: .04em;
-  color: #ede4d6;
+  color: #e6d3ab;
 }
-.nav-lang:hover { background: rgba(255, 255, 255, .1); color: #fff; }
+.nav-lang:hover { background: #e6d3ab; color: #22383d; border-color: #e6d3ab; }
 
 @media (max-width: 640px) {
   .demo-play { padding: 9px 16px; font-size: 12.5px; }
@@ -1004,13 +1012,13 @@ h4 { font-size: 15.5px; color: var(--ink); font-weight: 700; }
   transition: all .18s;
 }
 .btn-cv {
-  background: #e8b877;
-  color: #12263f;
-  border: 1px solid #e8b877;
+  background: #e6d3ab;
+  color: #22383d;
+  border: 1px solid #e6d3ab;
 }
-.btn-cv:hover { background: #f0c78f; border-color: #f0c78f; }
+.btn-cv:hover { background: #f0e2c4; border-color: #f0e2c4; }
 .btn-ghost {
-  color: #f3ece1;
+  color: #e9f0e8;
   border: 1px solid rgba(255, 255, 255, .3);
 }
 .btn-ghost:hover { background: rgba(255, 255, 255, .1); }
