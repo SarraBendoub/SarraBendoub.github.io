@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarra Ben Doub — AI Engineer · Data Scientist | Generative AI · Document Intelligence</title>
+<meta name="description" content="AI Engineer and Data Scientist. Generative AI, Document Intelligence and Machine Learning: LLMs, RAG, OCR, NLP and machine learning.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Sarra Ben Doub — AI Engineer · Data Scientist">
+<meta property="og:description" content="Generative AI, Document Intelligence and Machine Learning: LLMs, RAG, OCR, NLP and machine learning.">
+<meta property="og:url" content="https://sarrabendoub.github.io/ai/">
+<meta property="og:image" content="https://sarrabendoub.github.io/assets/og-image-ai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sarra Ben Doub — AI Engineer · Data Scientist">
+<meta name="twitter:description" content="Generative AI, Document Intelligence and Machine Learning: LLMs, RAG, OCR, NLP and machine learning.">
+<meta name="twitter:image" content="https://sarrabendoub.github.io/assets/og-image-ai.png">
+
+<link rel="alternate" hreflang="fr" href="index-fr.html">
+<link rel="stylesheet" href="../styles.css?v=20260927">
+<style>
+  /* Styles propres a cette page. La palette, tiree de la photo de profil,
+     vit maintenant dans styles.css et sert aux deux portfolios. */
+
+  /* Competences en trois familles */
+  .skillset { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 28px; }
+  .skillgroup { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 22px 22px 24px; }
+  .skillgroup h4 { font-size: 16px; color: var(--navy); margin-bottom: 14px; }
+  .skillgroup ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  .skillgroup li {
+    font-size: 14px; color: var(--body); background: var(--bg-alt);
+    border: 1px solid var(--line); border-radius: 20px; padding: 6px 14px;
+  }
+  @media (max-width: 900px) { .skillset { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-brand">Sarra Ben Doub</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#ai">AI Projects</a></li>
+    <li><a href="#data-science">Data Science</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="../cv/Sarra_Ben_Doub_CV_EN_IA.pdf" target="_blank" rel="noopener">CV</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+    <li><a href="index-fr.html" class="nav-lang" hreflang="fr" lang="fr">FR</a></li>
+  </ul>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>AI Engineer · Data Scientist<span class="hero-sub">Generative AI · Document Intelligence · Machine Learning</span></h1>
+
+      <p class="hero-pitch">
+        Engineering graduate from the National School of Engineers of Tunis (ENSIT) in applied
+        mathematics and modelling (2026), specialised in Data Science and AI, with a BSc in Data
+        Science from the Faculty of Sciences of Tunis (FST).
+      </p>
+
+      <p class="hero-pitch">
+        I build Machine Learning and LLM applications, from raw data to the tool a team uses every
+        day. Most of my recent work involves LLMs: intelligent document processing (IDP),
+        retrieval-augmented generation (RAG) and structured outputs that can be
+        validated before anyone relies on them.
+      </p>
+
+      <p class="hero-seeking">
+        <span class="dot"></span>
+        I'm looking for an opportunity in <strong>Data Science, AI Engineering or Machine Learning</strong>.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-cv" href="#ai">View projects</a>
+        <a class="btn-ghost" href="../cv/Sarra_Ben_Doub_CV_EN_IA.pdf" target="_blank" rel="noopener" download>Download CV</a>
+      </div>
+
+      <p class="hero-links">
+        <a href="https://github.com/SarraBendoub" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/sarra-ben-doub/" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="mailto:sarrabendoub5@gmail.com">Email</a>
+      </p>
+    </div>
+
+    <div class="hero-photo round">
+      <img src="../assets/sarra.jpg" alt="Sarra Ben Doub">
+      <span class="badge-open">Open to opportunities</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= AI PROJECTS ================= -->
+<section id="ai" class="section">
+  <div class="wrap">
+    <p class="eyebrow">AI Engineering</p>
+    <h2>Document intelligence, LLMs and NLP</h2>
+    <p class="section-lead">
+      Systems that read documents, extract data that can be checked, and answer questions without
+      inventing anything.
+    </p>
+
+    <!-- CreditDoc-AI -->
+    <article id="creditdoc" class="project">
+      <div class="project-head">
+        <div>
+          <h3>CreditDoc-AI — Scanned documents, structured extraction and RAG</h3>
+          <p class="project-org">Document AI · OCR · LLM · Grounded Q&amp;A</p>
+        </div>
+        <span class="project-date">2026</span>
+      </div>
+
+      <p class="project-lead">
+        PDF parsers fail on scanned documents: there is no text left, only an image. Yet most of a
+        bank's digitised paper files are exactly that. CreditDoc-AI starts from the image, cleans
+        it, runs OCR, rebuilds the tables, then extracts validated data. A question-answering
+        interface then queries the document and cites its sources. Everything runs locally, so no
+        document leaves the premises.
+      </p>
+
+      <div class="metrics">
+        <div class="metric"><strong>Validated JSON</strong><span>Pydantic schema per sector</span></div>
+        <div class="metric"><strong>Grounded RAG</strong><span>page citation, refusal if absent</span></div>
+        <div class="metric"><strong>100% local</strong><span>no external API call</span></div>
+      </div>
+
+      <ul class="project-points">
+        <li><strong>Image pipeline.</strong> <strong>OpenCV</strong> preprocessing (deskew, denoise, binarise), then <strong>OCR</strong>. Tables are rebuilt from the position of the words.</li>
+        <li><strong>Two-layer extraction.</strong> Label rules first, tolerant to OCR errors. The <strong>LLM only runs second</strong>, with JSON-schema constrained output, and only for the fields left empty.</li>
+        <li><strong>Checks before use.</strong> <strong>Pydantic</strong> validation, provenance for every value, and inconsistent amounts flagged rather than silently corrected.</li>
+        <li><strong>RAG over the document.</strong> Hybrid search, answers written only from the retrieved passages, page citation, explicit refusal when the information is absent.</li>
+      </ul>
+
+      <p class="project-tech"><b>Tech:</b> Python · OpenCV · OCR · Ollama · Pydantic · Streamlit</p>
+      <p class="project-links">
+        <b>Code:</b>
+        <a href="https://github.com/SarraBendoub/CreditDoc-AI" target="_blank" rel="noopener" class="link-code">GitHub</a>
+      </p>
+    </article>
+
+    <!-- News-Radar -->
+    <article id="news-radar" class="project">
+      <div class="project-head">
+        <div>
+          <h3>News-Radar — Semantic search and RAG over a live corpus</h3>
+          <p class="project-org">RAG · pgvector · Local embeddings · FastAPI</p>
+        </div>
+        <span class="project-date">2026</span>
+      </div>
+
+      <p class="project-lead">
+        A platform that continuously collects AI and data engineering publications, makes them
+        searchable by meaning rather than keywords, and lets you query them in conversation. No API
+        key, no cost per request.
+      </p>
+
+      <div class="metrics">
+        <div class="metric"><strong>~1,000</strong><span>articles indexed</span></div>
+        <div class="metric"><strong>384 dims</strong><span>local embeddings, pgvector</span></div>
+        <div class="metric"><strong>30 min</strong><span>automatic ingestion cycle</span></div>
+      </div>
+
+      <ul class="project-points">
+        <li><strong>Ingestion pipeline.</strong> Scheduled RSS collection, HTML cleaning, deduplication by URL hash and a uniqueness constraint. Running it again creates no duplicates.</li>
+        <li><strong>Semantic search.</strong> Embeddings computed locally, stored in <strong>PostgreSQL with pgvector</strong>, cosine distance search. A query phrased differently still finds the right article.</li>
+        <li><strong>RAG chatbot.</strong> Two modes: grounded on the retrieved articles with their sources, or general knowledge. The grounded mode declines to answer outside the corpus.</li>
+        <li><strong>API and interface.</strong> <strong>FastAPI</strong> backend with about fifteen routes, containerised PostgreSQL, web interface served by the API.</li>
+      </ul>
+
+      <p class="project-tech"><b>Tech:</b> Python · FastAPI · PostgreSQL / pgvector · fastembed · Ollama · Docker</p>
+      <p class="project-links">
+        <b>Code:</b>
+        <a href="https://github.com/SarraBendoub/News-Radar" target="_blank" rel="noopener" class="link-code">GitHub</a>
+      </p>
+    </article>
+
+    <!-- BIAT -->
+    <article id="biat" class="xp xp-flagship">
+      <span class="flag">Flagship project</span>
+
+      <div class="xp-head">
+        <div>
+          <h3>BIAT — Financial Document Intelligence &amp; Credit Risk</h3>
+          <p class="xp-org">Banque Internationale Arabe de Tunisie · AI Engineer &amp; Data Scientist — Final-year project</p>
+        </div>
+        <span class="xp-date">Feb – Jul 2026</span>
+      </div>
+
+      <p class="xp-lead-text">
+        <strong>Automating financial-statement processing to support credit risk analysis.</strong>
+        Financial statements published as PDFs require substantial extraction, cleaning and
+        preparation before they can be used for financial analysis. I built a pipeline combining
+        Document AI, OCR, data processing and LLMs, from document validation through to generating a
+        summary that supports credit risk analysis.
+      </p>
+
+      <div class="metrics">
+        <div class="metric"><strong>4 statements</strong><span>balance sheet, income, equity, cash flow</span></div>
+        <div class="metric"><strong>4 ratio families</strong><span>liquidity, solvency, profitability, leverage</span></div>
+        <div class="metric"><strong>N / N-1</strong><span>year-on-year comparison</span></div>
+      </div>
+
+      <figure class="demo">
+        <video controls preload="none" playsinline width="1280" height="606"
+               poster="../projects/01-biat-credit-risk/media/app-demo-poster.jpg">
+          <source src="../projects/01-biat-credit-risk/media/app-demo.webm" type="video/webm">
+          Your browser cannot play this video.
+          <a href="../projects/01-biat-credit-risk/media/app-demo.webm">Download the recording</a> instead.
+        </video>
+        <figcaption>
+          Walkthrough of the application (2 min 27 s, no sound) — the PDF upload, document
+          validation, table extraction,
+          data cleaning and verification, assignment to the chart of accounts, ratio computation and
+          generation of an analysis summary.
+        </figcaption>
+      </figure>
+
+      <ul class="xp-points">
+        <li>
+          <strong>Document validation.</strong> Checking the nature of the document to confirm it is
+          indeed a company's financial statements before any further processing.
+        </li>
+        <li>
+          <strong>Extraction &amp; structuring.</strong> Extracting financial tables from the statements
+          filed as PDFs with the <strong>CMF</strong>, the Tunisian market regulator, using
+          <strong>Docling</strong> and <strong>OCR</strong>: balance sheet, equity and liabilities,
+          income statement and cash-flow statement. The data is then structured and stored in
+          <strong>MongoDB</strong>.
+        </li>
+        <li>
+          <strong>Data cleaning &amp; verification.</strong> Cleaning, normalising and checking the
+          extracted data to surface OCR errors, inconsistent values and items that need review before
+          analysis.
+        </li>
+        <li>
+          <strong>Financial &amp; credit analysis.</strong> A decision-support application built with
+          <strong>Streamlit</strong>, computing liquidity, solvency, profitability and leverage ratios
+          and comparing the current year against the previous one.
+        </li>
+        <li>
+          <strong>Analysis summary generation.</strong> An <strong>LLM</strong> generates a reasoned
+          summary from the available data and ratios, with several levels of assessment: favourable,
+          reserved, unfavourable or needs further review. Previous assessments stay available. The
+          final decision remains with the analyst.
+        </li>
+        <li>
+          <strong>Industrialisation.</strong> Pipeline orchestrated with <strong>n8n</strong> and
+          containerised with <strong>Docker</strong>.
+        </li>
+      </ul>
+
+      <p class="xp-tech"><b>Tech:</b> Python · Docling / OCR · MongoDB · Streamlit · LLM · n8n · Docker</p>
+      <p class="xp-links">
+        <a href="../projects/01-biat-credit-risk/docs/recommendation-letter.pdf" target="_blank" rel="noopener">Supervisor's recommendation letter</a>
+      </p>
+    </article>
+
+    <!-- GAT -->
+    <article id="gat" class="xp">
+      <div class="xp-head">
+        <div>
+          <h3>GAT Assurances — Claims Intelligence &amp; NLP</h3>
+          <p class="xp-org">Insurance · AI &amp; Full-Stack Development · Internship</p>
+        </div>
+        <span class="xp-date">Jun – Aug 2025</span>
+      </div>
+      <p class="xp-lead-text">
+        <strong>Automating the intake and handling of insurance claims with NLP.</strong>
+      </p>
+      <p>
+        Development of a custom claims-management platform for an insurance agency, comprising a
+        public website, a customer area and a back-office. The interface was designed together with
+        a graphic designer, to fit the agency's visual identity and user-experience needs.
+      </p>
+      <p>
+        The platform includes a conversational assistant that analyses requests written in natural
+        language. It identifies the customer's intent — <strong>claim, reimbursement, policy issue
+        or roadside assistance</strong> — then collects the missing information, creates the claim
+        and issues a tracking number.
+      </p>
+
+      <div class="metrics">
+        <div class="metric"><strong>4 intents</strong><span>claim, refund, policy issue, roadside assistance</span></div>
+        <div class="metric"><strong>14 entries</strong><span>assistant knowledge base</span></div>
+        <div class="metric"><strong>&lt; 50 ms</strong><span>rule engine response, fully offline</span></div>
+      </div>
+
+      <figure class="demo">
+        <video controls preload="none" playsinline width="1280" height="720"
+               poster="../projects/02-gat-assurances-claims-nlp/media/demo-poster.jpg">
+          <source src="../projects/02-gat-assurances-claims-nlp/media/demo.webm" type="video/webm">
+          Your browser cannot play this video.
+          <a href="../projects/02-gat-assurances-claims-nlp/media/demo.webm">Download the recording</a> instead.
+        </video>
+        <figcaption>
+          End-to-end walkthrough (57 s, no sound) — the agency site, a customer asking which
+          documents a claim requires, describing a broken windscreen, the assistant opening the file
+          and issuing a tracking number, and that same claim landing in the agency's back office.
+        </figcaption>
+      </figure>
+
+      <div class="shots">
+        <figure>
+          <a href="../projects/02-gat-assurances-claims-nlp/media/site.jpg" target="_blank" rel="noopener">
+            <img src="../projects/02-gat-assurances-claims-nlp/media/site-card.jpg" alt="Public website of the GAT Assurances agency" loading="lazy" decoding="async">
+          </a>
+          <figcaption>The agency's public site — products, team and contact details, with the claims area linked from the menu.</figcaption>
+        </figure>
+        <figure>
+          <a href="../projects/02-gat-assurances-claims-nlp/media/assistant.png" target="_blank" rel="noopener">
+            <img src="../projects/02-gat-assurances-claims-nlp/media/assistant-card.jpg" alt="The assistant answering a question and classifying a claim" loading="lazy" decoding="async">
+          </a>
+          <figcaption>A documents question answered from the knowledge base, then a broken windscreen recognised as a claim.</figcaption>
+        </figure>
+        <figure>
+          <a href="../projects/02-gat-assurances-claims-nlp/media/ticket.png" target="_blank" rel="noopener">
+            <img src="../projects/02-gat-assurances-claims-nlp/media/ticket-card.jpg" alt="Claim filed from the conversation with its tracking number" loading="lazy" decoding="async">
+          </a>
+          <figcaption>The claim filed straight from the conversation — priority, category and the tracking number to follow it up.</figcaption>
+        </figure>
+        <figure>
+          <a href="../projects/02-gat-assurances-claims-nlp/media/dashboard.png" target="_blank" rel="noopener">
+            <img src="../projects/02-gat-assurances-claims-nlp/media/dashboard-card.jpg" alt="Agency back office listing every claim" loading="lazy" decoding="async">
+          </a>
+          <figcaption>The back office — every claim with its priority and status, searchable and filterable by the agency.</figcaption>
+        </figure>
+      </div>
+
+      <ul class="xp-points">
+        <li>
+          <strong>Web design &amp; development.</strong> Building a custom platform with a public
+          website, a customer area and a back-office, working with a graphic designer on the visual
+          design and the user experience.
+        </li>
+        <li>
+          <strong>Intent classification.</strong> A <strong>French-language rule engine</strong>
+          built to handle missing accents and common typos. When no rule determines the intent
+          clearly, <strong>zero-shot classification</strong> based on
+          <strong>BART-large-MNLI</strong> takes over.
+        </li>
+        <li>
+          <strong>Conversational assistant.</strong> Handling the exchange with the customer,
+          answering common questions and progressively collecting the information needed to file a
+          claim.
+        </li>
+        <li>
+          <strong>Claims handling.</strong> Automatic creation of a claim with its category,
+          priority and tracking number, then routing to the agency's back-office.
+        </li>
+        <li>
+          <strong>Back-office.</strong> An interface for agents to view, search, filter and follow
+          up on claims.
+        </li>
+      </ul>
+
+      <p class="xp-tech"><b>Tech:</b> Python · Flask · Transformers · BART-large-MNLI · NLP · SQLite · HTML/CSS/JS</p>
+      <p class="xp-links">
+        <a href="../projects/02-gat-assurances-claims-nlp/docs/recommendation-letter.pdf" target="_blank" rel="noopener">Recommendation letter</a>
+        <a href="https://github.com/SarraBendoub/insurance-agency-platform" target="_blank" rel="noopener">Code on GitHub</a>
+      </p>
+    </article>
+
+    <!-- BNA -->
+    <article id="bna" class="xp">
+      <div class="xp-head">
+        <div>
+          <h3>BNA Bank — Customer Service Chatbot</h3>
+          <p class="xp-org">Banking · NLP &amp; Machine Learning · Internship</p>
+        </div>
+        <span class="xp-date">Apr – May 2023</span>
+      </div>
+      <p class="xp-lead-text">
+        <strong>Automating the handling of frequent customer questions with NLP.</strong>
+      </p>
+      <p>
+        Development of a customer-service chatbot able to understand requests written in French and
+        route them to the appropriate answers drawn from the bank's knowledge base.
+      </p>
+      <p>
+        The project combined linguistic preprocessing, intent classification and deployment of a
+        Flask API. Two deep-learning approaches, <strong>FNN</strong> and <strong>LSTM</strong>,
+        were built and compared to select the model best suited to intent classification.
+      </p>
+
+      <figure class="demo-light">
+        <a class="demo-link" href="../projects/03-bna-bank-chatbot/media/demo.webm" target="_blank" rel="noopener">
+          <img src="../projects/03-bna-bank-chatbot/media/demo-poster.jpg" width="1280" height="720"
+               alt="The BNA chatbot answering a customer" loading="lazy" decoding="async">
+          <span class="demo-play">Watch the demo — 24 s</span>
+        </a>
+        <figcaption>
+          Four customer questions — greeting, services, BNA eBanking and sending a Mandat Cash. Each
+          intent is classified by the trained model, the answer drawn from the bank's FAQ base.
+        </figcaption>
+      </figure>
+
+      <ul class="xp-points">
+        <li>
+          <strong>NLP preprocessing.</strong> Cleaning and preparing French-language queries before
+          they reach the classification model.
+        </li>
+        <li>
+          <strong>Intent classification.</strong> Training and comparing two architectures,
+          <strong>FNN</strong> and <strong>LSTM</strong>, to identify the intent behind each
+          customer question.
+        </li>
+        <li>
+          <strong>Automated answers.</strong> Mapping each intent to an answer from the bank's FAQ
+          base, covering banking services, BNA eBanking and Mandat Cash among others.
+        </li>
+        <li>
+          <strong>Deployment.</strong> Integrating the selected model into a web application with
+          <strong>Flask</strong>, so customers interact with the chatbot directly.
+        </li>
+      </ul>
+
+      <p class="xp-tech"><b>Tech:</b> TensorFlow · Keras · NLTK · Python · Flask · NLP · Deep Learning</p>
+      <p class="xp-links">
+        <a href="../projects/03-bna-bank-chatbot/docs/recommendation-letter.pdf" target="_blank" rel="noopener">Supervisor's recommendation letter</a>
+        <a href="https://github.com/SarraBendoub/-chatbot_BNA-main" target="_blank" rel="noopener">Code on GitHub</a>
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ================= DATA SCIENCE ================= -->
+<section id="data-science" class="section section-alt">
+  <div class="wrap">
+    <p class="eyebrow">Data Science</p>
+    <h2>Risk modelling, explainability and monitoring</h2>
+    <p class="section-lead">
+      Models are only useful when their decisions can be explained and their reliability tracked
+      over time.
+    </p>
+
+    <!-- CreditGuard -->
+    <article id="creditguard" class="project">
+      <div class="project-head">
+        <div>
+          <h3>CreditGuard — Explainable &amp; Monitored Credit Scoring</h3>
+          <p class="project-org">Credit risk · Probability of default</p>
+        </div>
+        <span class="project-date">2026</span>
+      </div>
+
+      <p class="project-lead">
+        A scoring system that estimates default risk while also providing an explanation of its
+        predictions and indicators for monitoring the model. The aim is to combine predictive
+        performance, interpretability and tracking of model stability.
+      </p>
+
+      <div class="metrics">
+        <div class="metric"><strong>0.757</strong><span>AUC</span></div>
+        <div class="metric"><strong>SHAP</strong><span>prediction explanation</span></div>
+        <div class="metric"><strong>PSI + KS</strong><span>drift surveillance</span></div>
+      </div>
+
+      <div class="shots">
+        <figure>
+          <a href="../projects/05-creditguard-credit-scoring/media/dashboard.png" target="_blank" rel="noopener">
+            <img src="../projects/05-creditguard-credit-scoring/media/dashboard-card.jpg" alt="CreditGuard dashboard — applicant scoring with SHAP explanation" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Scoring an applicant — 98% default probability, with the SHAP breakdown behind the decision.</figcaption>
+        </figure>
+        <figure>
+          <a href="../projects/05-creditguard-credit-scoring/media/drift.png" target="_blank" rel="noopener">
+            <img src="../projects/05-creditguard-credit-scoring/media/drift-card.jpg" alt="Population Stability Index across features" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Drift surveillance — PSI per feature, flagging when the population has moved.</figcaption>
+        </figure>
+      </div>
+
+      <ul class="project-points">
+        <li><strong>Probability-of-default model.</strong> A <strong>LightGBM</strong> model estimating an applicant's probability of default.</li>
+        <li><strong>Explainability via SHAP.</strong> Analysis of the features contributing to each prediction, making the model's output more interpretable and easier to review.</li>
+        <li><strong>Drift monitoring.</strong> Using <strong>PSI</strong>, complemented by Kolmogorov-Smirnov and Chi-squared tests, to detect distribution shifts between the training data and new observations.</li>
+        <li><strong>Application &amp; deployment.</strong> A <strong>Streamlit</strong> dashboard presenting the score, the SHAP explanations and the monitoring indicators, with <strong>Docker</strong> packaging for reproducible deployment.</li>
+      </ul>
+
+      <p class="project-tech"><b>Tech:</b> Python · LightGBM · SHAP · SciPy · Streamlit · Docker</p>
+      <p class="project-links">
+        <b>Code:</b>
+        <a href="https://github.com/SarraBendoub/CreditGuard" target="_blank" rel="noopener" class="link-code">GitHub</a>
+      </p>
+    </article>
+
+    <!-- FraudGuard -->
+    <article id="fraudguard" class="project">
+      <div class="project-head">
+        <div>
+          <h3>FraudGuard — Fraud Detection &amp; AML/CFT Monitoring</h3>
+          <p class="project-org">Fraud · Financial Crime · Transaction Monitoring</p>
+        </div>
+        <span class="project-date">2026</span>
+      </div>
+
+      <p class="project-lead">
+        A transaction-monitoring system combining machine learning with business rules. The project
+        separates the detection of transaction behaviour associated with fraud from a rule engine
+        meant to flag scenarios requiring an AML/CFT review, then centralises the results in a
+        single alert queue for the analyst.
+      </p>
+
+      <div class="metrics">
+        <div class="metric"><strong>0.89</strong><span>PR-AUC</span></div>
+        <div class="metric"><strong>0.82</strong><span>F1 score</span></div>
+        <div class="metric"><strong>6.4M</strong><span>transactions · 0.13% fraud</span></div>
+      </div>
+
+      <div class="shots">
+        <figure>
+          <a href="../projects/06-fraudguard-fraud-aml/media/dashboard.png" target="_blank" rel="noopener">
+            <img src="../projects/06-fraudguard-fraud-aml/media/dashboard-card.jpg" alt="FraudGuard alert queue with per-alert detail" loading="lazy" decoding="async">
+          </a>
+          <figcaption>The analyst's view — prioritised alert queue, rules triggered, SHAP reasons per transaction.</figcaption>
+        </figure>
+        <figure>
+          <a href="../projects/06-fraudguard-fraud-aml/media/prcurve.png" target="_blank" rel="noopener">
+            <img src="../projects/06-fraudguard-fraud-aml/media/prcurve.png" alt="Precision-recall curve of the fraud model" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Precision-recall curve — the metric that matters at 0.13% positives, not accuracy.</figcaption>
+        </figure>
+      </div>
+
+      <ul class="project-points">
+        <li><strong>Fraud detection.</strong> An <strong>XGBoost</strong> model trained on a heavily imbalanced dataset. The decision threshold is tuned on the trade-off between missed frauds and false alerts rather than left arbitrarily at 0.5.</li>
+        <li><strong>Transaction monitoring.</strong> A rule engine covering transaction velocity, structuring and certain account patterns, with <strong>BLOCK / REVIEW / ALLOW</strong> action levels.</li>
+        <li><strong>Explainability.</strong> <strong>SHAP</strong> is used to identify the main features contributing to the alerts raised by the fraud model.</li>
+        <li><strong>Data leakage detected and fixed.</strong> An early version reached PR-AUC 0.9998 by using features posterior to the transaction, and therefore unavailable at decision time. Those features were removed to build a more realistic evaluation, based only on information available before the transaction.</li>
+      </ul>
+
+      <p class="project-tech"><b>Tech:</b> Python · XGBoost · SHAP · pandas · Streamlit</p>
+      <p class="project-links">
+        <b>Code:</b>
+        <a href="https://github.com/SarraBendoub/FraudGuard" target="_blank" rel="noopener" class="link-code">GitHub</a>
+      </p>
+    </article>
+
+    <!-- Dysphonia -->
+    <article id="dysphonia" class="project">
+      <div class="project-head">
+        <div>
+          <h3>Dysphonia detection from voice recordings</h3>
+          <p class="project-org">Audio signal processing · Classification · Supervised academic project</p>
+        </div>
+        <span class="project-date">2024</span>
+      </div>
+
+      <p class="project-lead">
+        First-year engineering project carried out for the <strong>Salah Azaïez Institute in
+        Tunis</strong>. Diagnosing dysphonia takes long sessions, and tracking a patient's
+        improvement is hard to measure objectively. The goal was to extract measurable indicators
+        from simple sustained-vowel recordings.
+      </p>
+
+      <div class="metrics">
+        <div class="metric"><strong>3 vowels</strong><span>sustained /a/, /i/, /u/</span></div>
+        <div class="metric"><strong>MFCC</strong><span>+ spectral centroid, zero-crossing rate</span></div>
+        <div class="metric"><strong>2 models</strong><span>Random Forest and KNN compared</span></div>
+      </div>
+
+      <ul class="project-points">
+        <li><strong>Data.</strong> Recordings from the public <strong>Saarbruecken Voice Database</strong>: healthy and dysphonic voices, men and women, three pitch levels.</li>
+        <li><strong>Preparation.</strong> A single dataset built from scattered files, with duration, sample rate, vowel, pitch, gender and class. <strong>CRISP-DM</strong> method.</li>
+        <li><strong>Audio features.</strong> <strong>MFCC</strong> coefficients, spectral centroid and zero-crossing rate, chosen to describe voice quality rather than spoken content.</li>
+        <li><strong>Results.</strong> Random Forest beats KNN on both classes: precision 0.73 against 0.66 on healthy voices, 0.57 against 0.46 on pathological ones.</li>
+        <li><strong>Stated limitation.</strong> Scores stay lower on the pathological class, which is under-represented. That is the first thing to fix before any clinical use.</li>
+      </ul>
+
+      <p class="project-tech"><b>Tech:</b> Python · librosa · scikit-learn · Random Forest · KNN · pandas</p>
+      <p class="project-links">
+        <b>Code:</b>
+        <a href="https://github.com/SarraBendoub/Speech_language_pathology_diagnosis_Salah-azeiz-institute" target="_blank" rel="noopener" class="link-code">GitHub</a>
+      </p>
+    </article>
+
+    <!-- AidBridge -->
+    <article id="aidbridge" class="project">
+      <div class="project-head">
+        <div>
+          <h3>AidBridge — Visual assistance and sign language recognition</h3>
+          <p class="project-org">Computer vision · Deep Learning · Academic team project (pair)</p>
+        </div>
+        <span class="project-date">2025</span>
+      </div>
+
+      <p class="project-lead">
+        Second-year engineering project, supervised at ENSIT. A prototype assistant for people with
+        visual impairments, Alzheimer's disease or speech loss: it reads aloud the objects in front
+        of the camera and translates sign language gestures into text.
+      </p>
+
+      <ul class="project-points">
+        <li><strong>Object detection.</strong> <strong>YOLOv8m</strong> pretrained on COCO (80 classes), chosen for its balance between speed and accuracy. Detected objects are announced through text-to-speech, run in a separate thread so the video stream never blocks.</li>
+        <li><strong>Sign language.</strong> A video dataset we recorded ourselves, body and hand landmarks extracted with <strong>MediaPipe Holistic</strong>, then a stacked <strong>LSTM</strong> network that classifies each gesture sequence.</li>
+      </ul>
+
+      <p class="project-tech"><b>Tech:</b> Python · OpenCV · Ultralytics YOLOv8 · MediaPipe · TensorFlow / Keras · pyttsx3</p>
+    </article>
+
+    <!-- VALUE -->
+    <article id="value" class="xp xp-minor">
+      <div class="xp-head">
+        <div>
+          <h3>VALUE — Data Engineering &amp; Analytics</h3>
+          <p class="xp-org">Data Science · Data Engineering · Internship</p>
+        </div>
+        <span class="xp-date">Jul 2024</span>
+      </div>
+      <p class="xp-lead-text">
+        <strong>Collecting, structuring and analysing multi-source data to surface territorial
+        trends.</strong>
+      </p>
+      <p>
+        Development of a data collection and analysis pipeline on Tunisian heritage sites. Data from
+        several sources was collected, cleaned and cross-referenced before being analysed with
+        unsupervised machine-learning methods and displayed on an interactive map.
+      </p>
+
+      <figure class="demo-light">
+        <a class="demo-link" href="../projects/04-value-heritage-data/media/demo.webm" target="_blank" rel="noopener">
+          <img src="../projects/04-value-heritage-data/media/demo-poster.jpg" width="1280" height="720"
+               alt="Interactive map of Tunisian heritage sites" loading="lazy" decoding="async">
+          <span class="demo-play">Watch the demo — 12 s</span>
+        </a>
+        <figcaption>
+          The 314 sites across the three segments, then the blind spots alone — the counter drops
+          from 314 to 112 — before zooming into the Sousse–Monastir–Mahdia coast.
+        </figcaption>
+      </figure>
+
+      <div class="shots shots-single">
+        <figure>
+          <a href="../projects/04-value-heritage-data/media/blindspots.jpg" target="_blank" rel="noopener">
+            <img src="../projects/04-value-heritage-data/media/blindspots-card.jpg" alt="Map of Tunisia showing the 112 heritage sites absent from review platforms" loading="lazy" decoding="async">
+          </a>
+          <figcaption>The 112 sites with no presence on review platforms — 36% of everything Wikidata documents for the country.</figcaption>
+        </figure>
+      </div>
+
+      <ul class="xp-points">
+        <li>
+          <strong>Multi-source collection.</strong> Automated web data collection with
+          <strong>Scrapy</strong> and <strong>Selenium</strong>, across several sources.
+        </li>
+        <li>
+          <strong>Data preparation.</strong> Cleaning, structuring and merging the data into a
+          dataset usable for analysis.
+        </li>
+        <li>
+          <strong>Segmentation.</strong> Applying <strong>K-Means</strong> to identify groups of
+          sites sharing similar characteristics.
+        </li>
+        <li>
+          <strong>Geographic analysis.</strong> Building an interactive map with
+          <strong>Folium</strong> to visualise how the sites are distributed and spot the areas with
+          low digital visibility.
+        </li>
+      </ul>
+
+      <p class="xp-tech"><b>Tech:</b> Python · Scrapy · Selenium · Pandas · scikit-learn · K-Means · Folium</p>
+      <p class="xp-links">
+        <a href="https://github.com/SarraBendoub/HeritageScope" target="_blank" rel="noopener">Code on GitHub</a>
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <div class="wrap">
+    <p class="eyebrow">Skills</p>
+    <h2>What I work with</h2>
+
+    <div class="skillset">
+      <div class="skillgroup">
+        <h4>AI Engineering</h4>
+        <ul>
+          <li>Machine Learning</li>
+          <li>NLP</li>
+          <li>Computer Vision</li>
+          <li>OCR</li>
+          <li>APIs</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+
+      <div class="skillgroup">
+        <h4>Generative AI Engineering</h4>
+        <ul>
+          <li>LLM</li>
+          <li>RAG</li>
+          <li>Embeddings</li>
+          <li>Vector DB</li>
+        </ul>
+      </div>
+
+      <div class="skillgroup">
+        <h4>Data Science</h4>
+        <ul>
+          <li>Statistics</li>
+          <li>EDA</li>
+          <li>Feature Engineering</li>
+          <li>Predictive Modeling</li>
+          <li>Explainability</li>
+          <li>Model Monitoring</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section section-alt">
+  <div class="wrap">
+    <div class="grid-2 gap-lg">
+      <div>
+        <p class="eyebrow">Education</p>
+        <h2>Academic background</h2>
+        <div class="edu">
+          <div class="edu-item">
+            <h4>Engineering degree — Applied Mathematics &amp; Modelling</h4>
+            <p class="edu-org">National School of Engineers of Tunis (ENSIT)</p>
+            <p class="edu-meta">2023 – 2026</p>
+          </div>
+          <div class="edu-item">
+            <h4>BSc — Data Science</h4>
+            <p class="edu-org">Faculty of Sciences of Tunis (FST)</p>
+            <p class="edu-meta">2020 – 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="eyebrow">Certification &amp; languages</p>
+        <h2>Credentials</h2>
+        <div class="edu">
+          <div class="edu-item">
+            <h4>Microsoft Azure AI Fundamentals (AI-900)</h4>
+            <p class="edu-meta">Microsoft</p>
+          </div>
+          <div class="edu-item">
+            <h4>Languages</h4>
+            <p class="edu-meta">Arabic — native · French — fluent · English — intermediate (TOEIC) · Italian — A1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <div class="wrap contact-inner">
+    <h2>Get in touch</h2>
+    <p class="contact-lead">
+      Hiring in <strong>AI Engineering, Data Science or Machine Learning</strong>?
+    </p>
+
+    <p class="contact-avail">Available to talk.</p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:sarrabendoub5@gmail.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">sarrabendoub5@gmail.com</span>
+      </a>
+      <a class="contact-card" href="tel:+21626236449">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">+216 26 236 449</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/sarra-ben-doub/" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">sarra-ben-doub</span>
+      </a>
+      <a class="contact-card" href="https://github.com/SarraBendoub" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">SarraBendoub</span>
+      </a>
+    </div>
+
+    <p class="contact-loc">Based in Tunis, Tunisia.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>© 2026 Sarra Ben Doub — AI Engineer · Data Scientist</p>
+  </div>
+</footer>
+
+<script src="../script.js?v=20260906"></script>
+</body>
+</html>

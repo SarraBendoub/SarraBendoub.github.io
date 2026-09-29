@@ -25,7 +25,7 @@ PROFIL_FR_APRES = """    Ingénieure diplômée de l'École Nationale Supérieur
     en mathématiques appliquées et modélisation (2026), spécialisée en Data Science et IA, après une
     licence en Data Science à la Faculté des Sciences de Tunis (FST). Je construis des
     applications de Machine Learning et de LLM, des données brutes jusqu'à l'outil utilisé au
-    quotidien : traitement intelligent des documents (IDP), RAG, agents IA et sorties structurées
+    quotidien : traitement intelligent des documents (IDP), RAG et sorties structurées
     validées avant usage. Ouverte aux opportunités."""
 
 PROJETS_FR_AVANT = """  <h2>Projets personnels — IA financière &amp; risque</h2>"""
@@ -68,7 +68,7 @@ PROFIL_EN_APRES = """    Engineering graduate from the National School of Engine
     mathematics and modelling (2026), specialised in Data Science and AI, with a BSc in Data Science
     from the Faculty of Sciences of Tunis (FST). I build Machine Learning and LLM
     applications, from raw data to the tool a team uses every day: intelligent document processing
-    (IDP), retrieval-augmented generation (RAG), AI agents, and structured outputs that can be
+    (IDP), retrieval-augmented generation (RAG) and structured outputs that can be
     validated before anyone relies on them. Open to opportunities."""
 
 PROJETS_EN_AVANT = """  <h2>Personal projects — Financial AI &amp; Risk</h2>"""
